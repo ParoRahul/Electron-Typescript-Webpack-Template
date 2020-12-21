@@ -1,0 +1,19 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    
+    "search.exclude": {
+        "**/dist": true,
+        "**/node_modules": true,
+        "**/out": true,
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/dist": true,
+    },
+    "editor.tabSize": 2,
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+      ]
+}

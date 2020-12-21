@@ -1,0 +1,63 @@
+{
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["filenames","@typescript-eslint"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "ignorePatterns": [ "build/*", "node_modules/*" ],
+    "rules": {
+      "filenames/match-exported": [2,[null,"camel"]],
+      "semi": ["error", "never"],
+      "no-eval": ["error"],
+      "no-sync": ["error"],
+      "no-var": ["error"],
+      "no-use-before-define": "off",
+      "@typescript-eslint/naming-convention" : [
+        "error",
+        {
+          "selector": "interface",
+          "format": ["PascalCase"],
+          "custom": {
+            "regex": "^I[A-Z]",
+            "match": false
+          }
+        },
+        {
+          "selector": "class",
+          "format": ["PascalCase"]
+        },
+        {
+          "selector": "variableLike",
+          "format": ["camelCase"],
+          "leadingUnderscore": "allow",
+          "custom": {
+            "regex": "^(any|Number|number|String|string|Boolean|boolean|Undefined|undefined)$",
+            "match": false
+          }
+        },
+        {
+          "selector": "typeParameter",
+          "format": ["PascalCase"],
+          "prefix": ["T"]
+        }
+      ],
+      "@typescript-eslint/no-unused-expressions": ["error"],
+      "@typescript-eslint/explicit-member-accessibility": ["error"],
+      "@typescript-eslint/no-unused-vars":[
+        "error", {"args": "none"}
+      ],
+      "@typescript-eslint/no-use-before-define":["error"],
+      "@typescript-eslint/ban-types": ["off"],
+      "@typescript-eslint/no-var-requires": ["off"]
+    }
+}
