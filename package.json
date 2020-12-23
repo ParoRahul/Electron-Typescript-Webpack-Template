@@ -2,7 +2,6 @@
   "name": "electron_ts_template",
   "version": "1.0.0",
   "description": "Electron Ttypescript Template with gulp task runner",
-  "main": "./out/main/main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ParoRahul/Electron-Typescript-Webpack-Template.git"
@@ -21,6 +20,7 @@
     "compile:prod": "cross-env NODE_ENV=production gulp compile",
     "devServer": "gulp devServer",
     "electron": "electron .",
+    "build": "node ./tasks/buildApp.js",
     "version": "webpack --version",
     "lint": "eslint  --ext .ts .",
     "lint:fix": "eslint  --fix --ext .ts ."
@@ -57,9 +57,8 @@
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.7.2",
-    "webpack-stream": "^6.1.1"
-  },
-  "dependencies": {
+    "webpack-stream": "^6.1.1",
     "electron": "^11.1.0"
-  }
+  },
+  "dependencies": {}
 }

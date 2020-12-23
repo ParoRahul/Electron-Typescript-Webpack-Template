@@ -51,7 +51,7 @@ export class MainProcess {
             this.window.loadURL('http://localhost:4200')
         } else {
           this.window.loadURL(url.format({
-                pathname: path.join(__dirname, `../renderer/index.html`),
+                pathname: path.join(__dirname, `index.html`),
                 protocol: 'file:',
                 slashes: true
                 })

@@ -1,0 +1,22 @@
+{
+  "name": "electron_ts_template",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ParoRahul/Electron-Typescript-Webpack-Template.git"
+  },  
+  "scripts": {
+    "build": "node ./tasks/buildApp.js"
+  },
+  "author": {
+    "name": "Rahul",
+    "email": "r.das699@gmail.com",
+    "url": "https://fghffg.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {}
+}
