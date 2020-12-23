@@ -26,8 +26,8 @@ const replacements = {
 
 const externals = ['7zip']
 
-const outputDirMain = '../out/main'
-const outputDirRenderer = '../out/renderer'
+const outputDirMain = '../temp/main'
+const outputDirRenderer = '../temp/renderer'
 
 if (channel === 'development') {
     externals.push('devtron')
